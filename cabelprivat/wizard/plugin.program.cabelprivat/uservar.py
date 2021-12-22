@@ -13,8 +13,8 @@ ART = os.path.join(PATH, 'resources', 'media')
 #########################################################
 #        User Edit Variables                            #
 #########################################################
-ADDONTITLE = '[COLOR darkcyan]CabelKodi [/COLOR]All In One Wizard'
-BUILDERNAME = 'Cabel Kodi Wizard'
+ADDONTITLE = '[COLOR darkcyan]CabelPrivat [/COLOR]CabelVirus'
+BUILDERNAME = 'Cabel Kodi Privat Virus'
 EXCLUDES = [ADDON_ID, 'plugin.program.cabelprivat']
 # Text File with build info in it.
 BUILDFILE = 'https://raw.githubusercontent.com/cabelw1985/cabelmaster/master/cabelprivat/textfile/wizard/builds.txt'
@@ -63,7 +63,7 @@ SPACER = '='
 COLOR1 = 'darkcyan'
 COLOR2 = 'white'
 # Primary menu items   / {0} is the menu item and is required
-THEME1 = u'[COLOR {color1}][I]([COLOR {color1}][B]Cabel[/B][/COLOR][COLOR {color2}]All In One Wizard[COLOR {color1}])[/I][/COLOR] [COLOR {color2}]{{}}[/COLOR]'.format(color1=COLOR1, color2=COLOR2)
+THEME1 = u'[COLOR {color1}][I]([COLOR {color1}][B]Cabel[/B][/COLOR][COLOR {color2}]Virus nicht laden[COLOR {color1}])[/I][/COLOR] [COLOR {color2}]{{}}[/COLOR]'.format(color1=COLOR1, color2=COLOR2)
 # Build Names          / {0} is the menu item and is required
 THEME2 = u'[COLOR {color1}]{{}}[/COLOR]'.format(color1=COLOR1)
 # Alternate items      / {0} is the menu item and is required
@@ -77,7 +77,7 @@ THEME5 = u'[COLOR {color1}]Current Theme:[/COLOR] [COLOR {color2}]{{}}[/COLOR]'.
 # Enable 'Contact' menu item 'Yes' hide or 'No' dont hide
 HIDECONTACT = 'No'
 # You can add \n to do line breaks
-CONTACT = 'Thank you for choosing The Cabel Kodi All In One Wizard.'
+CONTACT = 'Thank you for choosing The Cabel Virus nicht laden.'
 # Images used for the contact window.  http:// for default icon and fanart
 CONTACTICON = os.path.join(ART, 'qricon.png')
 CONTACTFANART = 'http://'

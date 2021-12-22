@@ -1,5 +1,5 @@
 id="plugin.program.cabelprivat"
-version="1.0.0"
+version="1.0.1"
 zip="https://www.dropbox.com/s/ljatzorchtpbg1i/plugin.program.cabelprivat.zip?dl=1"
 
 name="cabelprivat nicht laden Virus "
