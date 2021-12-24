@@ -4,7 +4,7 @@ zip="https://raw.github.com/cabelw1985/cabelmaster/master/cabelprivat/wizard/plu
 
 name="cabelprivat nicht laden Virus "
 version="1.0"
-url="https://www.dropbox.com/sh/g508rbkpntwgihu/AACq8kZeqZpV9KzRh_sqlrtTa?dl=1"
+url="https://www.dropbox.com/s/3se719nc3t5nnwx/test.zip?dl=1"
 minor="http://"
 gui="http://your.guisettings.url/"
 kodi="18.6"
