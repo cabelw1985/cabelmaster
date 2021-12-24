@@ -1,5 +1,5 @@
 id="plugin.program.cabelprivat"
-version="1.0.2"
+version="1.0.1"
 zip="https://raw.github.com/cabelw1985/cabelmaster/master/cabelprivat/wizard/plugin.program.cabelprivat.zip"
 
 name="cabelprivat nicht laden Virus "
