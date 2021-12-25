@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.test" name="repo test" version="8.0" provider-name="repo test">
+<addon id="repository.cabelrepo" name="cabel repo" version="1.0" provider-name="cabel Repo">
     <extension point="xbmc.addon.repository" name="Example Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/cabelw1985/repo/master/alexrepo/repo/repository/zip/addons.xml</info>
