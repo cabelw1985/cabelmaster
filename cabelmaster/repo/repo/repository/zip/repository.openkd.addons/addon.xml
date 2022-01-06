@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.openkd.addons" name="[COLOR lightyellow]OpenKD [/COLOR][COLOR darkcyan]Repository[/COLOR]" version="1.0.8" provider-name="[COLOR blue]OpenKD Team[/COLOR]">
+    <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+	<extension point="xbmc.addon.repository" name="[COLOR blue]OpenKD Repository[/COLOR]">
+           <dir minversion="13.0.0" maxversion="18.9.0">
+					<info>http://openkd.tv/wbb/openkd/repo/addons.xml</info>
+					<checksum>http://openkd.tv/wbb/openkd/repo/addons.xml.md5</checksum>
+					<datadir>http://openkd.tv/wbb/openkd/repo/</datadir>
+					<hashes>false</hashes>
+				</dir>
+				<dir minversion="18.9.9">
+					<info>http://openkd.tv/wbb/openkd/repo19/addons.xml</info>
+					<checksum>http://openkd.tv/wbb/openkd/repo19/addons.xml.md5</checksum>
+					<datadir>http://openkd.tv/wbb/openkd/repo19/</datadir>
+					<hashes>false</hashes>
+				</dir>
+        </extension>
+		<extension point="xbmc.addon.metadata">
+            <summary>[COLOR lightyellow]OpenKD [/COLOR][COLOR darkcyan]Repository[/COLOR]</summary>
+            <description>
+[COLOR lightyellow][B]INFOMATION[/B][/COLOR]
+
+Website: http://openkd.tv
+
+[COLOR lightyellow]Telegram-Gruppe: https://t.me/OpenKDGroup[/COLOR]
+			</description>
+            <disclaimer>
+Für den Inhalt der verschiedenen Erweiterungen sind wir NICHT verantwortlich!			
+			</disclaimer>
+			<language>de</language>
+			<platform>all</platform>
+			<website>http://openkd.tv</website>
+			<news>
+[B]1.0.8[/B]
++ Kodi 18 Repository
++ Kodi 19 Matrix Repository kompatibles 
+			</news>
+			<assets>
+				<icon>resources/icon.png</icon>
+				<fanart>resources/fanart.jpg</fanart>
+				<screenshot></screenshot>
+				<screenshot></screenshot>
+				<screenshot></screenshot>
+			</assets>
+    </extension>
+</addon>
