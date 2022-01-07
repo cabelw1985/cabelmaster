@@ -1,10 +1,10 @@
-id="plugin.program.cabelwizard"
+id="plugin.program.cabelbasic"
 version="1.0.1"
 zip="https://raw.github.com/cabelw1985/cabel/blob/main/plugin/plugin.program.cabelwizard.zip"
 
-name="Basis Build"
+name="Basis Build für Wizards"
 version="1.0"
-url="https://www.dropbox.com/s/ahdyl2iff4s65zk/basic.zip?dl=1"
+url="https://www.dropbox.com/s/9ohv3tcpdqmzj4a/cabelbasic.zip?dl=1"
 minor="http://"
 gui="http://your.guisettings.url/"
 kodi="18.6"
