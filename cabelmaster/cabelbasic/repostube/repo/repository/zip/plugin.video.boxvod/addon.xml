@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.boxvod" name="BOX.VOD" version="18.1.2" provider-name="TEAM.STUBE">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">BOX.VOD</summary>
+        <summary lang="de">BOX.VOD</summary>
+        <language>de</language>
+        <description lang="en">KODI-VAVOO-TV-Stube</description>
+        <description lang="de">KODI-VAVOO-TV-Stube</description>
+        <source></source>
+        <forum></forum>
+        <email></email>
+        <website></website>
+    </extension>
+</addon>

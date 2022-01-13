@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.watched.stubeboxv4" name="StubeBoxV4" version="1.0.0" provider-name="Gatekeeper">  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+	<import addon="script.module.simplejson" />
+	<import addon="inputstream.adaptive" version="2.2.21"/>
+	<import addon="script.module.inputstreamhelper" version="0.3.5"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="6.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB"></summary>
+	<summary lang="de_DE"></summary>
+    <description lang="en_GB"></description>
+	<description lang="de_DE"></description>
+	<disclaimer></disclaimer>
+    <platform>all</platform>
+	<assets>
+        <screenshot>resources/screenshot1.png</screenshot>
+        <screenshot>resources/screenshot2.png</screenshot>
+		<screenshot>resources/screenshot3.png</screenshot>
+		<screenshot>resources/screenshot4.png</screenshot>
+        <screenshot>resources/screenshot5.png</screenshot>
+		<screenshot>resources/screenshot6.png</screenshot>
+		<screenshot>resources/screenshot7.png</screenshot>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+	</assets>
+  </extension>
+</addon>

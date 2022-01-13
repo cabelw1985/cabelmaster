@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.miclier-doku" name="[COLORgreen]MICLIER[/COLOR]-DOKU" version="1.0.3A" provider-name="MICLIER/Adrian">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0"/>
+    <import addon="plugin.video.youtube" version="6.4.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de_DE">Doku-Kanäle-YouTube</summary>
+    <description lang="de_DE">Doku Kanäle auf Youtube Terra X,ZDF Histroy,Arte,N24 usw .</description>
+    <disclaimer lang="de_DE"></disclaimer>
+    <language>de</language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+    <news></news>
+    <assets>
+        <icon>resources/icon.png</icon>
+        <fanart>resources/fanart.jpg</fanart>
+        <banner></banner>
+        <clearlogo></clearlogo>
+        <screenshot></screenshot>
+    </assets>
+  </extension>
+</addon>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.save.favourites" name="Favoriten speichern/wiederherstellen" version="0.01" provider-name="TEAM STUBE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+	<summary lang="de"></summary>
+    <description lang="en"></description>
+	<description lang="de"></description>
+    <license>The MIT License</license>
+    <platform>all</platform>
+    <language></language>
+  </extension>
+</addon>
