@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.kus-allinone-wizard" name="[COLORdeepskyblue]KUS[/COLOR] AllInOne Wizard" version="2.0.0" provider-name="SGK">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.speedtester" optional="true" version="1.1.2" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLORdeepskyblue]KUS[/COLOR] AllInOne Wizard</summary>
+        <summary lang="de">[COLORdeepskyblue]KUS[/COLOR] AllInOne Wizard</summary>
+        <description lang="en">Simply install pre-configured Kodi builds + Maintenance-Tools.[CR]Support:[CR][COLORdeepskyblue]https://www.facebook.com/groups/kodiunlimited[/COLOR][CR]Donation:[CR][COLORdeepskyblue]https://www.paypal.me/KodiUnlimited[/COLOR]</description>
+        <description lang="de">Einfach fertig vorkonfigurierte Kodi-Builds installieren + Wartungs-Optionen.[CR]Support:[CR][COLORdeepskyblue]https://www.facebook.com/groups/kodiunlimited[/COLOR][CR]Spenden:[CR][COLORdeepskyblue]https://www.paypal.me/KodiUnlimited[/COLOR]</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://www.facebook.com/groups/kodiunlimited</source>
+        <news></news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+		</assets>
+    </extension>
+</addon>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.toolmaster" name="[COLOR cyan]Toolmaster[/COLOR] [COLOR white]Repository[/COLOR]" version="5.0" provider-name="[COLOR lime]Toolmaster[/COLOR]">
+    <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+		
+    <extension point="xbmc.addon.repository" name="Toolmaster Repository">
+	<dir>
+		<info compressed="false">https://master-of-tools.de/toolmaster/repo/addons.xml</info>
+		<checksum>https://master-of-tools.de/toolmaster/repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://master-of-tools.de/toolmaster/repo/</datadir>
+	</dir> 
+	
+	<dir>
+         <info compressed="false">https://raw.github.com/streamxstream/xStreamRepo/master/addons.xml</info>
+         <checksum>https://raw.github.com/streamxstream/xStreamRepo/master/addons.xml.md5</checksum>
+         <datadir zip="true">https://raw.github.com/streamxstream/xStreamRepo/master/</datadir>
+        </dir>
+		
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR gold]Toolmaster[/COLOR] [COLOR red]Repository[/COLOR]</summary>
+        <description>[COLOR gold]Toolmaster[/COLOR] [COLOR red]Repository[/COLOR]
+[COLOR skyblue]Forum:[/COLOR] [COLOR gold]https://master-of-tools.de/forum[/COLOR]
+</description>
+        <platform>all</platform>
+      <assets>
+       <icon>icon.png</icon>
+       <fanart>fanart.jpg</fanart>
+  </assets>
+  </extension>
+</addon>
+
