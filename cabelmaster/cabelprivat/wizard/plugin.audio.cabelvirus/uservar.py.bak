@@ -17,7 +17,7 @@ ADDONTITLE = '[COLOR darkcyan]cabelprivat [/COLOR]Virus nicht laden '
 BUILDERNAME = 'Cabelprivat virus nicht laden'
 EXCLUDES = [ADDON_ID, 'plugin.program.cabelvirus']
 # Text File with build info in it.
-BUILDFILE = 'https://raw.githubusercontent.com/cabelw1985/cabelmaster/master/cabelprivat/textfile/wizard/builds.txt'
+BUILDFILE = 'https://raw.githubusercontent.com/cabelw1985/cabelmaster/master/cabelmaster/cabelprivat/textfile/wizard/builds.txt'
 # How often you would like it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK = 0
