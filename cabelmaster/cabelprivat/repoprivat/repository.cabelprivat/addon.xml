@@ -4,7 +4,7 @@
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/cabelw1985/cabelmaster/master/cabelmaster/cabelprivat/repoprivat/repo/repository/zip/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/cabelw1985/cabelmaster/master/cabelmaster/cabelprivat/repoprivat/repo/repository/zip/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.github.com/cabelw1985/cabelmaster/master/main/cabelmaster/cabelprivat/repoprivat/repo/repository/zip/</datadir>
+            <datadir zip="true">https://raw.github.com/cabelw1985/cabelmaster/main/cabelmaster/cabelprivat/repoprivat/repo/repository/zip/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
