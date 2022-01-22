@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <addon id="repository.kodi-vavoo-tv-stube" name="[B][COLOR red]KODI-VAVOO-TV-Stube[/COLOR] Repo[/B]" version="0.1.5b" provider-name="[B][COLOR red]KODI-VAVOO-TV-Stube[/COLOR] Repo[/B]">
+        <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="kodi-vavoo-tv-stube">
+		<info compressed="true">http://repo.stube.org/_repo/_downloads/addons.xml</info>
+		<checksum>http://repo.stube.org/_repo/_downloads/addons.xml.md5</checksum>
+		<datadir zip="true">http://repo.stube.org/_repo/_downloads/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install add-ons from Kodi-Vavoo-Stube</summary>
+		<summary lang="de">Installiere Add-ons von Kodi-Vavoo-Stube</summary>
+	
+		<description lang="de"> Downloade und installiere Add-ons von [COLOR white] Repo[/COLOR] [COLOR red]Kodi-Vavoo-Stube.[/COLOR]
+	
+		[COLOR red]Webseite : [COLOR white]           https://kodi-vavoo-tv.stube.org[/COLOR]
+		[COLOR red]Telegram Gruppe : [COLOR white]https://t.me/KODIVAVOOTVStube[/COLOR]
+		</description>
+	<website>https://https:kodi-vavoo-stube.org</website>
+	
+		<platform>all</platform>
+		<assets>
+            <icon>resources/icon.gif</icon>
+            <fanart>resources/fanart.jpg</fanart>
+	    <clearlogo>resources/logo.gif</clearlogo>
+            <screenshot>resources/screenshot01.jpg</screenshot>
+            <screenshot>resources/screenshot02.jpg</screenshot>
+            <screenshot>resources/screenshot03.jpg</screenshot>
+        </assets>
+	</extension>
+</addon>
