@@ -1,3 +1,25 @@
+3.5.28~nightly4
+  12.01.2022
+ - xcine deaktiviert (SITE_GLOBAL_SEARCH)
+ - fix megakino  - thx betegeuse46
+ - add kinokiste.tech  - thx betegeuse46
+ - guiElements extended -  thx betegeuse46
+ - edit gui.py
+ - Update README.md
+
+3.5.28~nightly3
+  12.01.2022
+ - movie4k_click
+ - megakino
+
+3.5.28~nightly2
+  2022.01.10
+ - add megakino - thx betegeuse46
+
+3.5.28~nightly1
+  08.01.2022
+ - add xCine - thx Heptamer
+
 3.5.27
   30.12.2021
  - wechsel von UrlResolver zu resolveUrl

@@ -1,0 +1,8 @@
+[B]Version 1.1.32[/B]
+beeg - playback fixed
+erogarga - fixed categories & next page
+HPJAV - new site
+Cambro - Add tags and playlists
+Favorites - added 'sort by'
+SupJAV - new site
+Aagmaal - fix when only one video source

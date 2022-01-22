@@ -310,7 +310,7 @@
 
 <addon id="metadata.themoviedb.org.python"
        name="The Movie Database Python"
-       version="1.5.1+matrix.1"
+       version="1.6.1+matrix.1"
        provider-name="Team Kodi">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
@@ -320,7 +320,13 @@
              library="python/scraper.py"/>
   <extension point="xbmc.addon.metadata">
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>v1.5.1 (2021-10-19)
+    <news>v1.6.1 (2022-01-09)
+- Feature: fanart prioritization option
+
+v1.6.0 (2021-12-24)
+- Feature: fallback to English language for Fanart.tv artwork
+
+v1.5.1 (2021-10-19)
 - Fix: search error when no year
 
 v1.5.0 (2021-10-16)
@@ -444,7 +450,7 @@ v1.4.0 (2021-07-10)
 
 <addon id="metadata.tvshows.themoviedb.org"
        name="The Movie Database"
-       version="3.5.13"
+       version="3.5.14"
        provider-name="Team Kodi">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
@@ -967,6 +973,28 @@ updates to image reduction algorithm to better deal with shows with lots of seas
     </extension>
 </addon>
 
+<addon id="plugin.program.iptv.merge" name="IPTV Merge" provider-name="SlyGuy" version="0.21.7">
+  <requires>
+    <import addon="script.module.slyguy"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <description lang="en">Easily merge multiple IPTV playlists &amp; EPGs from remote, local or supported add-on sources.</description>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <license></license>
+    <language/>
+    <website></website>
+    <news>Add Service Delay advanced setting</news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="plugin.program.kodi-vavoo-tv-stube" name="[B][COLOR red]KODI-VAVOO-TV-Stube[/COLOR] [COLOR skyblue]Wizard[/COLOR][/B]" version="2.1.7" provider-name="kodi-vavoo-tv.stube.org">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -987,7 +1015,7 @@ updates to image reduction algorithm to better deal with shows with lots of seas
   </extension>
 </addon>
 
-<addon id="plugin.program.kus-allinone-wizard" name="[COLORdeepskyblue]KUS[/COLOR] AllInOne Wizard" version="2.0.0" provider-name="SGK">
+<addon id="plugin.program.kus-allinone-wizard" name="[COLORdeepskyblue]KUS[/COLOR] AllInOne Wizard" version="2.0.2" provider-name="SGK">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -1247,6 +1275,32 @@ updates to image reduction algorithm to better deal with shows with lots of seas
     </extension>
 </addon>
 
+<addon id="plugin.video.cumination" name="Cumination" provider-name="Cumination" version="1.1.32">
+    <requires>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.resolveurl" version="5.0.00" />
+        <import addon="script.module.resolveurl.xxx" version="2.0.1" />
+        <import addon="script.common.plugin.cache" />
+        <import addon="script.module.websocket" version="0.50.0" />
+        <import addon="script.module.requests" optional="true" />
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL 2.0</license>
+        <summary lang="en_GB">Cumination, the culmination of adult sites on Kodi</summary>
+        <description lang="en_GB">Cumination, the culmination of adult sites on Kodi</description>
+        <disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the sites offered. Click on About from the contextmenu on each site to check for contact details.</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -1282,7 +1336,7 @@ updates to image reduction algorithm to better deal with shows with lots of seas
 	</extension>
 </addon>
 
-<addon id="plugin.video.joyn" name="Joyn" version="2.3.9+matrix.1" provider-name="knaerzche, Maven">
+<addon id="plugin.video.joyn" name="Joyn" version="2.4.1+matrix.1" provider-name="knaerzche, Maven">
 	<requires>
 		<import addon="inputstream.adaptive" version="2.5.0"/>
 		<import addon="script.module.inputstreamhelper" version="0.4.4"/>
@@ -1315,79 +1369,6 @@ updates to image reduction algorithm to better deal with shows with lots of seas
 			<screenshot>resources/media/screenshot02.jpg</screenshot>
 			<screenshot>resources/media/screenshot03.jpg</screenshot>
 		</assets>
-		<news>
-v2.3.9
-fixed HTML unescaping
-v2.3.8
-fixed login
-v2.3.7
-fixed config init
-v2.3.6
-fixed login
-speedup config init
-v2.3.5
-fixed url error when init config
-v2.3.4
-improved 'clientData' for retrieving the manifest
-v2.3.3
-import translatePath from xbmcvfs for kodi matrix
-fixed init config
-v2.3.2
-get filtered manifest
-replaced LOGNOTICE with LOGINFO for kodi matrix
-v2.3.1.10
-implement new config generation
-fix index error in lastseen
-drop "ip spoofing"
-v2.3.1.9
-implement 7pass sso login
-cosmetics
-v2.3.1.8
-allow videos to be played without prior api request
-matrix property name change inputstreamaddon -> inputstream
-v2.3.1.7
-fix decoding issue in PY2
-v2.3.1.6
-add support for another error response format
-v2.3.1.5
-implement API changes
-try to get manifest up to 5 times, if it fails
-v2.3.1.4
-Revert using api based license filter
-check is* stuff just before video starts
-minor fixes
-v2.3.1.3
-fix DST bug
-implement xbmc.python 3.0.0 api changes
-v2.3.1.2
-fix license based display for tvshows, season, epsiodes
-add license based display for complation/-items
-make installation of script.module.uepg optional / on demand
-minor other bugfixes
-v2.3.1.1
-Hotfix: Website changed again
-v2.3.1
-improve addon overall addon performance by reusing languageinvoker/splitting into submodules/logging on demand only
-create singleton-instances on per addon-handle basis
-cache epg/landing-page in libjoyn-instance
-fix playback on OSX
-create fake-uuid for allwinner android sdk level 24 (importing uuid module crashes kodi)
-implement own get_node() and make it more unique (espacially on android)
-fix set sort as per settings on matrix
-use window.setProperty for asset_id instead of 'hiding' in it imdb-infolabel
-make sure only playback for this addon is tracked in service.py
-fix relogin issue, when decrypting username/password fails
-fix language files
-v2.3.0
-add api-based resume postions
-partly fixed live stream audio sync issue
-add save username/password option
-add option to show categories in main menu
-add ask-for-login dialog on first addon start
-show content based on current subscription
-add option to hightlight premium content
-rework some stuff
-		</news>
 	</extension>
 </addon>
 
@@ -1548,7 +1529,7 @@ rework some stuff
 	</extension>
 </addon>
 
-<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.1+matrix.1" provider-name="realvito (inspired by L0RE)">
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.2+matrix.1" provider-name="realvito (inspired by L0RE)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
@@ -1575,15 +1556,9 @@ rework some stuff
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.1+matrix.1  (08.06.2021)[/COLOR][/B][CR]
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-- old addon Name: Youtube Music
-- changed: new Name for the addon to avoid confusion with the Original
-- From now on new Name: You(T) Musicbox
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-- fixed: Beatport generates Error on open (old service 'pro.beatport' not for free anymore)
-- fixed: German-DJ-Playlist sometimes generates Error on open (changed to https)
-- optimized: remove unnecessary objects in Title-Notification
+		<news>[B][COLOR orangered]Version 3.0.2+matrix.1  (08.12.2021)[/COLOR][/B][CR]
+- fixed: Billboard-Videolists are empty (Website-Structure changes)
+- added: Billboard-Global 200 and Billboard-Archive sorted by year
 		</news>
 	</extension>
 </addon>
@@ -1703,10 +1678,53 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="plugin.video.xship" version="2021.12.18~nightly1" name="Xship" provider-name="Xship-Team">
+<addon
+  id="plugin.video.videodevil"
+  version="1.8.21"
+  name="VideoDevil"
+  provider-name="xbmc-adult">
+  <requires>
+    <!-- Commenting xbmc.python allows install on all versions of Kodi -->
+    <!-- <import addon="xbmc.python" version="2.14.0"/> -->
+    <import addon="script.module.six"/>
+    <import addon="script.module.kodi-six"/>
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de_DE">Spielen Sie Videos von verschiedenen Streaming-Sites für Erwachsene ab</summary>
+    <summary lang="en_GB">Play videos from different adult streaming sites</summary>
+    <summary lang="fi_FI">Toista videoita aikuisten suoratoistosivustoilta</summary>
+    <summary lang="fr_FR">Lire des vidéos de différents sites de streaming pour adultes</summary>
+    <summary lang="pt_PT">Reproduza vídeos de diferentes sites de streaming adulto</summary>
+    <summary lang="sv_SE">Spela videor från olika streaming-webbplatser för vuxna</summary>
+    <description lang="de_DE">Dieses Addon spielt Videos von YouPorn, Tube8, Boysfood, MoviesAnd, PornoTube, xHamster, KeezMovies und einigen anderen Streaming-Sites für Erwachsene ab. Es enthält explizites Material für Erwachsene. Sie können dieses Addon nur anzeigen, wenn Sie mindestens 18 Jahre alt sind oder mindestens das Alter der Mehrheit in dem Land, in dem Sie wohnen oder von dem aus Sie auf diese Inhalte zugreifen. Wenn Sie diese Anforderungen nicht erfüllen, haben Sie keine Berechtigung, dieses Addon zu verwenden.</description>
+    <description lang="en_GB">This addon plays videos from YouPorn, Tube8, Boysfood, MoviesAnd, PornoTube, xHamster, KeezMovies and some other adult streaming sites. It contains explicit adult material. You may only view this addon if you are at least 18 years of age, or at least the age of majority in the jurisdiction where you reside or from which you access this content. If you do not meet these requirements, then you do not have permission to use this addon.</description>
+    <description lang="fi_FI">Tämä lisäosa toistaa videoita YouPorn, Tube8, Boysfood, MoviesAnd, PornoTube, xHamster, KeezMovies ja joistakin muista aikuisten suoratoistosivustoista. Se sisältää nimenomaista aikuisille tarkoitettua materiaalia. Voit tarkastella tätä lisäosaa vain, jos olet vähintään 18-vuotias tai vähintään täysi-ikäinen sen lainkäyttöalueella, jossa asut tai josta käytät tätä sisältöä. Jos et täytä näitä vaatimuksia, sinulla ei ole lupaa käyttää tätä lisäosaa.</description>
+    <description lang="fr_FR">Cet addon lit des vidéos de YouPorn, Tube8, Boysfood, MoviesAnd, PornoTube, xHamster, KeezMovies et d'autres sites de streaming pour adultes. Il contient du matériel explicite pour adultes. Vous ne pouvez voir cet addon que si vous avez au moins 18 ans, ou au moins l'âge de la majorité dans la juridiction où vous résidez ou à partir de laquelle vous accédez à ce contenu. Si vous ne remplissez pas ces conditions, vous n'êtes pas autorisé à utiliser ce module complémentaire.</description>
+    <description lang="pt_PT">Este complemento reproduz vídeos do YouPorn, Tube8, Boysfood, MoviesAnd, PornoTube, xHamster, KeezMovies e alguns outros sites de streaming adulto. Ele contém material adulto explícito. Você só pode visualizar este complemento se tiver pelo menos 18 anos de idade ou maioridade na jurisdição em que reside ou da qual acessa este conteúdo. Se você não atender a esses requisitos, não terá permissão para usar este complemento.</description>
+    <description lang="sv_SE">Denna addon spelar videor från YouPorn, Tube8, Boysfood, Movies And, PornoTube, xHamster, KeezMovies och några andra streamingwebbplatser för vuxna. Det innehåller tydligt vuxenmaterial. Du får bara se detta tillägg om du är minst 18 år, eller åtminstone majoritetsåldern i den jurisdiktion där du bor eller från vilken du får åtkomst till detta innehåll. Om du inte uppfyller dessa krav har du inte behörighet att använda detta tillägg.</description>
+    <disclaimer lang="de_DE">Der Autor hostet oder verbreitet keinen der von diesem Addon angezeigten Inhalte. Der Autor hat keine Verbindung zum Inhalteanbieter.</disclaimer>
+    <disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+    <disclaimer lang="fi_FI">Kirjoittaja ei isännöi tai jaa mitään tämän lisäosan näytettyä sisältöä. Kirjoittajalla ei ole mitään siteitä sisällöntuottajaan.</disclaimer>
+    <disclaimer lang="fr_FR">L'auteur n'héberge ni ne distribue aucun des contenus affichés par cet addon. L'auteur n'a aucune affiliation avec le fournisseur de contenu.</disclaimer>
+    <disclaimer lang="pt_PT">O autor não hospeda nem distribui nenhum conteúdo exibido por este complemento. O autor não tem nenhuma afiliação com o provedor de conteúdo.</disclaimer>
+    <disclaimer lang="sv_SE">Författaren är inte värd eller distribuerar något av innehållet som visas av detta tillägg. Författaren har ingen anknytning till innehållsleverantören.</disclaimer>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.xship" version="2021.12.25~nightly1" name="Xship" provider-name="Xship-Team">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.urlresolver" version="2021.01.01"/>
+        <import addon="script.module.resolveurl" version="5.1.54"/>
         <!-- for remote debug -->
         <import addon="script.module.pydevd" optional="true"/>
     </requires>
@@ -1747,10 +1765,9 @@ Xship 2021.07.01
     </extension>
 </addon>
 
-<addon id="plugin.video.xstream" name="xStream" version="3.5.27" provider-name="xStream-Team">
+<addon id="plugin.video.xstream" name="xStream" version="3.5.28~nightly4" provider-name="xStream-Team">
  <requires>
     <import addon="script.module.requests"/>
-    <import addon="script.module.urlresolver" version="2021.10.01"/>
     <import addon="script.module.resolveurl" version="5.1.54"/>
     <import addon="script.module.six" version="1.11.0"/>
     <!-- <import addon="repository.xstream" optional="true"/> -->
@@ -1994,9 +2011,9 @@ Xship 2021.07.01
 <addon id="repository.cabelrepo" name="cabel repo" version="1.0" provider-name="cabel Repo">
     <extension point="xbmc.addon.repository" name="Example Repository">
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/cabelw1985/cabelmaster/master/cabelmaster/cabelbasic/repo/repo/repository/zip/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/cabelw1985/cabelmaster/master/cabelmaster/cabelbasic/repo/repo/repository/zip/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.github.com/cabelw1985/cabelmaster/main/cabelmaster/cabelbasic/repo/repo/repository/zip/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/cabelw1985/cabelmaster/master/cabelmaster/repo/repo/repository/zip/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/cabelw1985/cabelmaster/master/cabelmaster/repo/repo/repository/zip/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.github.com/cabelw1985/cabelmaster/main/cabelmaster/repo/repo/repository/zip/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -2696,6 +2713,25 @@ v.3.3.2
   </extension>
 </addon>
 
+<addon id="script.module.backports.zoneinfo" name="zoneinfo" version="0.2.1" provider-name="pganssle">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.tzdata" version="2021.5"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">A concrete time zone implementation to support the IANA time zone database</summary>
+    <description lang="en_GB">The zoneinfo module provides a concrete time zone implementation to support the IANA time zone database as originally specified in PEP 615.</description>
+    <platform>all</platform>
+    <license>Apache-2.0</license>
+    <website>https://pypi.org/project/backports.zoneinfo</website>
+    <source>https://github.com/pganssle/zoneinfo</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="script.module.beautifulsoup4" name="BeautifulSoup4" version="4.9.3+matrix.1" provider-name="Leonard Richardson (leonardr@segfault.org)">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -2752,11 +2788,11 @@ v.3.3.2
 
 <addon id="script.module.dateutil"
        name="python-dateutil"
-       version="2.8.1+matrix.1"
-       provider-name="Paul Ganssle, Gustavo Niemeyer">
+       version="2.8.2"
+       provider-name="Paul Ganssle, Gustavo Niemeyer, Tomi Pieviläinen, Yaron de Leeuw">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.six" version="1.14.0+matrix.1"/>
+    <import addon="script.module.six" version="1.15.0+matrix.1"/>
   </requires>
   <extension point="xbmc.python.module"
              library="lib" />
@@ -3140,7 +3176,7 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.56" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.58" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
@@ -3236,6 +3272,30 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
     </extension>
 </addon>
 
+<addon id="script.module.simplejson"
+       name="simplejson"
+       version="3.17.0+matrix.2"
+       provider-name="Bob Ippolito">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary lang="en_GB">Simple, fast, extensible JSON encoder/decoder for Python</summary>
+    <description lang="en_GB">Simple, fast, extensible JSON encoder/decoder for Python</description>
+    <disclaimer lang="en_GB">Code taken from https://pypi.org/project/simplejson/</disclaimer>
+    <license>MIT License, Academic Free License v. 2.1</license>
+    <website>https://pypi.org/project/simplejson/</website>
+    <source>https://github.com/simplejson/simplejson</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="script.module.six"
        name="six"
        version="1.15.0+matrix.1"
@@ -3258,7 +3318,7 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
   </extension>
 </addon>
 
-<addon id="script.module.slyguy" name="SlyGuy Common" provider-name="SlyGuy" version="0.47.5">
+<addon id="script.module.slyguy" name="SlyGuy Common" provider-name="SlyGuy" version="0.49.3">
   <requires>
     <import addon="slyguy.dependencies"/>
   </requires>
@@ -3297,13 +3357,32 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 	</extension>
 </addon>
 
+<addon id="script.module.tzdata" name="tzdata" version="2021.5" provider-name="pganssle">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">zic-compiled binaries for the IANA time zone database</summary>
+    <description lang="en_GB">tzdata is intended to be a fallback for systems that do not have system time zone data installed.</description>
+    <platform>all</platform>
+    <license>Apache-2.0</license>
+    <website>https://pypi.org/project/tzdata/</website>
+    <source>https://github.com/python/tzdata</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="script.module.tzlocal"
        name="tzlocal"
-       version="3.0.0+matrix.1"
+       version="3.0.0+matrix.2"
        provider-name="Lennart Regebro">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.pytz" version="2019.3.0+matrix.1"/>
+    <import addon="script.module.backports.zoneinfo" version="0.2.1"/>
   </requires>
   <extension point="xbmc.python.module"
              library="lib"/>
@@ -3311,9 +3390,7 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
     <summary lang="en_GB">Python Module to find out the current time zone</summary>
     <description lang="en_GB">Packed for Kodi from https://github.com/regebro/tzlocal, forked from https://github.com/jdollarKodi/script.module.tzlocal</description>
     <platform>all</platform>
-    <language></language>
     <license>MIT</license>
-    <forum></forum>
     <website>https://github.com/regebro/tzlocal</website>
     <source>https://github.com/regebro/tzlocal</source>
     <assets>
@@ -3736,6 +3813,78 @@ v1.0.1 (2019-08-06)
         </assets>
         <news lang="en">1.1.2 Fix Horizon URL Changes</news>
     </extension>
+</addon>
+
+<addon id="service.tvtunes" name="TVTunes" version="2.0.4" provider-name="latts">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.simplejson" version="3.17.0+matrix.2"/>
+		<import addon="script.module.beautifulsoup4" version="4.8.2+matrix.1"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+	</requires>
+	<extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.python.module" library="resources/lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="bg">Сваля и възпроизвежда мелодиите от вашите филми и сериали</summary>
+		<summary lang="ca">Obté i reproduieix els temes de les seves pel·lícules i sèries de televisió</summary>
+		<summary lang="da">Hent og afspil dine Film og TV-show Temaer.</summary>
+		<summary lang="de">Hole und spiele die Titelmelodie beim Browsen der TV-Shows</summary>
+		<summary lang="el">Λήψη και αναπαραγωγή μουσικών θεμάτων (TvTunes) των τηλεοπτικών σας σειρών</summary>
+		<summary lang="en">Play your soundtrack or video themes whilst browsing your library</summary>
+		<summary lang="es">Descarga y reproduce las bandas sonoras de las series de tu biblioteca</summary>
+		<summary lang="fr">Récupérez et écoutez les génériques des séries TV</summary>
+		<summary lang="fr_CA">Récupérer et lire vos thèmes de bandes sonores tout en parcourant votre vidéothèque</summary>
+		<summary lang="gl">Obter e reproducir a música das súas Series de TV</summary>
+		<summary lang="he">הורדה וניגון נעימות של סרטים וסדרות בעת עיון בספריה</summary>
+		<summary lang="hr">Nabavite i reproducirajte temu vašeg omiljenog filma i TV serije prilikom pregledavanja svoje videoteke</summary>
+		<summary lang="it">Ottieni ed esegui i temi musicali delle tue Serie tV</summary>
+		<summary lang="ko">영화와 TV 쇼의 테마 음악을 가져와서 재생합니다</summary>
+		<summary lang="lt">gauti ir atkurti jūsų filmų ir tv laidų temas</summary>
+		<summary lang="nl">Verkrijg en speel je nummer of video thema`s tijdens zoeken in jouw bibliotheek</summary>
+		<summary lang="no">Hent og spill av kjenningsmelodier mens du blar gjennom biblioteket</summary>
+		<summary lang="pl">Pobieraj i odtwarzaj ścieżki dźwiękowe lub motywy wideo podczas przeglądania biblioteki</summary>
+		<summary lang="pt">Obtenha e reproduza as músicas dos seus filmes e séries de TV.</summary>
+		<summary lang="pt_BR">Obtenha e reproduza o tema musical das suas séries de TV</summary>
+		<summary lang="sv">Hämtar och spelar dina TV-serier-teman</summary>
+		<description lang="bg">Скриптът ще Ви помогне да се сдобиете с мелодии от филми и сериали. Когато преглеждате инф. за даден филм или епизодите от даден сериал, съответната мелодия ще се възпроизвежда автоматично. За целта е необходимо да ползвате съвместим облик.</description>
+		<description lang="ca">Aquest script t'ajudarà a cercar la banda sonora de les teves pel·lícules i sèries de televisió en www.televisiontunes.com Les guardarà en un fitxer theme[0-9].mp3 a la carpeta dels vídeos i seran reproduïdes mentre navegues per la teva col·lecció de vídeos, quant entris a la carpeta d'una sèrie o a la pantalla d'informació de vídeo. (Necessites una pell compatible per a aquesta funcionalitat)</description>
+		<description lang="da">Scriptet vil hjælpe dig med at hente temaer til dit film og serie bibliotek fra www.televisiontunes.com. Den gemmer dem som theme[0-9].mp3 i hver af dine videomapper, så de vil blive spillet mens du gennemser dit videobibliotek når du går ind i seriemappen eller Video Information (Dit skin skal være kompatibel med denne feature)</description>
+		<description lang="de">Dieses Skript unterstützt das Laden, Organisieren und Abspielen von Titelmelodien deiner Filme und TV-Serien. Diese werden dann abgespielt, wenn du in deiner Datenbank oder den Video-Ordnern stöberst (benötigt einen kompatiblen Skin)</description>
+		<description lang="el">Αυτό το script θα σας βοηθήσει να κατεβάσετε μουσικά θέματα των τηλεοπτικών σας σειρών από το www.televisiontunes.com, θα τα αποθηκεύει σε αρχεία μορφής theme.mp3 στο φάκελο της εκάστοτε σειράς, και θα τα αναπαράγει κατά την περιήγησή σας στη συλλογή τηλ. σειρών σας (απαιτείται να υποστηρίζεται από το κέλυφός σας)</description>
+		<description lang="en">TvTunes will play themes whilst browsing your Kodi library.</description>
+		<description lang="es">Este script te ayudará a buscar las bandas sonoras de tus películas y series de www.televisiontunes.com y guardará un fichero theme.mp3 en el directorio de tu serie y será reproducido mientras navegas dentro de la carpeta de la serie. (Necesitas una skin compatible para esta funcionalidad)</description>
+		<description lang="fr">Ce script aidera à télécharger les génériques de série depuis www.televisiontunes.com. Il les enregistrera dans un fichier theme.mp3 dans les dossiers des séries, et ils seront ensuite joués à l'entrée dans la série correspondante (cette fonctionnalité requiert un thème compatible)</description>
+		<description lang="fr_CA">TVTunes est équipé de fonctions puissantes qui permettent la récupération, l'organisation et la lecture de thèmes tout en parcourant votre vidéothèque Kodi.</description>
+		<description lang="gl">Este script axudaralle a obter dende www.televisiontunes.com o tema da súa biblioteca de series, gardándoo no ficheiro theme.mp3 por cada cartafol da biblioteca entón reproduciranse ao entrar nos diferentes cartafoles ao navegar pola biblioteca (precisa de que o seu tema sexa compatíbel con esta carácteristica)</description>
+		<description lang="he">סקריפט זה יעזור לך להשיג שירי נושא לספריות הסרטים והסדרות שלך מ-www.televisiontunes.com, ישמור אותם בקובץ בשם theme[0-9].mp3 בכל אחת מתיקיות הוידאו שלך והם ינוגנו בעת עיון בספריית הוידאו כאשר תיכנס לספריית סדרה או במסך מידע וידאו (נדרשת תאימות המעטפת עבור יכולת זו)</description>
+		<description lang="hr">TvTunes je opremljen s moćnim značajkama koje omogućavaju nabavljanje, organizaciju i reproduciranje glazbenih tema dok vi pregledavate vašu Kodi videoteku, kada se koristi zajedno s kompatibilnom presvlakom.</description>
+		<description lang="it">Questo script ti aiuterà ad ottenere il tema delle serie tv presenti nella tua libreria da www.televisiontunes.com, li salverà nel file theme.mp3 in ogni cartella delle tue serie così quando sfoglierai la serie tv il tema sarà eseguito (il tuo skin deve essere compatibile)</description>
+		<description lang="ko">라이브러리의 영화와 TV 쇼 테마 음악을 www.televisiontunes.com 에서 가져와서 theme[0-9].mp3 형식으로 비디오 폴더에 저장합니다. TV 쇼 폴더나 비디오 정보 화면으로 들어가면 비디오 라이브러리를 탐색하는 동안 주제음악이 재생됩니다. (이 기능 사용하려면 스킨에서 지원하여야 합니다.)</description>
+		<description lang="lt">Šis skriptas jums padės temas jūsų filmų ir tv laidų temas iš www.televisiontunes.com. Jos bus išsaugotos theme[0-9].mp3 faile, kiekviename jūsų vaizdo aplanke ir bus atkurtos, naršant vaizdo bibliotekoje, pasirinkus TV laidos aplanką arba vaizdo informacijos langą (teminė išvaizda turi būti suderinama su šia funkcija)</description>
+		<description lang="nl">Dit script zoekt thema`s van TV series in jouw TV seriebibliotheek op www.televisiontunes.com en slaat ze op in thema[0-9].mp3 bestand in elke TV serie map. Ze worden afgespeeld wanneer je de  TV serie in bibliotheek modus bekijkt of Video-informatiescherm (Het gebruikte ontwerp moet wel compatibel zijn met dit script)</description>
+		<description lang="no">TvTunes er velutrustet med kraftige funksjoner som gjør det mulig hente, organisere og spille av kjenningsmelodier mens du blar igjennom Kodi biblioteket.</description>
+		<description lang="pl">Dodatek TvTunes wyposażono w potężny zestaw funkcji umożliwiający pobieranie, organizowanie i odtwarzanie motywów muzycznych podczas przeglądania biblioteki Kodi.</description>
+		<description lang="pt">Com este addon, poderá obter as músicas dos filmes e séries TV na sua biblioteca a partir de televisiontunes.com. Serão guardadas em ficheiros theme[0-9].mp3 dentro das pastas de vídeo e serão reproduzidas durante a navegação na biblioteca de vídeo, quando entrar dentro da pasta de Séries TV ou no ecrã de Informação de Vídeo (é necessário um tema compatível).</description>
+		<description lang="pt_BR">Este script ajudará você a obter o tema da sua coleção de séries de TV de www.televisiontunes.com, que serão salvos em um arquivo theme.mp3 em cada uma das pastas de suas séries e serão reproduzidos sempre que você acessar uma série na sua coleção (a skin precisa ser compatível com este recurso)</description>
+		<description lang="sv">Detta skript hjälper dig att hitta teman till ditt tv-seriebibliotek från www.televisiontunes.com som sparas i theme.mp3 filer i varje tv-seriemapp som sedan spelas när du öppnar tv-seriemappen (ditt skal måste vara kompatibelt för detta)</description>
+		<language></language>
+		<platform>all</platform>
+		<news>[B][COLOR=FF2CD13B]v2.0.4[/COLOR][/B] - Release date July 24, 2021[CR]
+[B][COLOR=FFFFA500]MAINTENANCE[/COLOR][/B]
+• I fixed a coding error in service.py. Thanks to Roger79 for reporting the bug, and scott967 for providing the fix!
+		</news>
+		<license>See LICENSE.txt</license>
+		<forum>https://forum.kodi.tv/showthread.php?tid=347428</forum>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<banner>resources/banner.jpg</banner>
+			<logo>resources/logo.png</logo>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="service.xbmc.versioncheck" name="Version Check" version="0.5.21+matrix.1" provider-name="Team Kodi">

@@ -1,5 +1,9 @@
 xShip Changelog
 
+"2021.12.23~nightly1"
+- alleserien entfernt
+- hd-streams.org entfernt
+
 "2021.12.18~nightly1"
 - add kinofox
 

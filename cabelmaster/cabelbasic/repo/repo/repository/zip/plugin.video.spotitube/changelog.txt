@@ -1,4 +1,8 @@
 ﻿
+[B]Version 3.0.2+matrix.1  (08.12.2021)[/B]
+- fixed: Billboard-Videolists are empty (Website-Structure changes)
+- added: Billboard-Global 200 and Billboard-Archive sorted by year
+
 [B]Version 3.0.1+matrix.1  (08.06.2021)[/B]
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - old addon Name: Youtube Music
