@@ -1,6 +1,6 @@
 id="plugin.program.cabelbasic"
 version="1.0.1"
-zip="https://raw.github.com/cabelw1985/cabel/blob/main/plugin/plugin.program.cabelwizard.zip"
+zip="https://raw.github.com/cabelw1985/cabelmaster/main/cabelmaster/cabelbasic/repo/repo/repository/zip/plugin.program.cabelbasic/plugin.program.cabelbasic-1.0.1.zip"
 
 name="Basis Build für Wizards"
 version="1.0"
