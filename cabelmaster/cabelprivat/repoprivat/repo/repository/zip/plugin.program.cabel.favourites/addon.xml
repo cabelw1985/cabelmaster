@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.super.cabel" name="Super Cabel Favourites" version="2.1.0" provider-name="jmooremcc, spoyser">
+<addon id="plugin.program.cabel.favourites" name="cabel Favourites" version="1.0.0" provider-name="jmooremcc, spoyser">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
   </requires>
@@ -23,8 +23,8 @@
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
     <website />
-    <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
-    <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
+    <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.cabel.favourites</source>
+    <source>https://github.com/jmooremcc/plugin.program.cabel.favourites</source>
     <email>seanpoyser at gmail.com</email>
     <email>jmooremcc at hotmail.com</email>
     <assets>
@@ -77,17 +77,17 @@
     <menu id="kodi.core.main">
 
       <item library="capture.py">
-        <label>$ADDON[plugin.program.super.favourites 30002]</label>
-        <visible>!IsEmpty(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+        <label>$ADDON[plugin.program.cabel.favourites 30002]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.cabel.favourites)</visible>
       </item>
 
       <item library="menu_addtofaves.py">
-        <label>$ADDON[plugin.program.super.favourites 30047]</label>
-        <visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+        <label>$ADDON[plugin.program.cabel.favourites 30047]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.cabel.favourites)</visible>
       </item>
 
       <item library="menu_download.py">
-        <label>$ADDON[plugin.program.super.favourites 30259]</label>
+        <label>$ADDON[plugin.program.cabel.favourites 30259]</label>
         <visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
       </item>
 

@@ -56,7 +56,7 @@ PLEASE READ IT!![/COLOR][/B]
 
 [COLOR chartreuse]1.0.56: 19th February 2017[/COLOR]
     - added optional initial path, and include play folder parameters to quicklaunch script
-        usage: xbmc.runscript(special://home/addons/plugin.program.super.favourites/quicklaunch.py,folder1/folder2,True)
+        usage: xbmc.runscript(special://home/addons/plugin.program.cabel.favourites/quicklaunch.py,folder1/folder2,True)
     - fixed playlist parsing
     - fixed quicklaunch in Krypton
     - fixed launching ExecuteBuiltin types from the quick launch dialog
@@ -76,7 +76,7 @@ PLEASE READ IT!![/COLOR][/B]
 [COLOR chartreuse]1.0.53.1: 29th July 2016[/COLOR]
     - improved handling of "troublesome" items that insist on running from within their own addon
     - added quick launch script
-          usage: xbmc.runscript(special://home/addons/plugin.program.super.favourites/quicklaunch.py)
+          usage: xbmc.runscript(special://home/addons/plugin.program.cabel.favourites/quicklaunch.py)
           use to launch the Super Favourites quicklaunch menu
     - fixed playing of playlists
     - changed iExplore to explore the folder you are in when you 'OK' the dialog
@@ -106,7 +106,7 @@ PLEASE READ IT!![/COLOR][/B]
 [COLOR chartreuse]1.0.51: 9th April 2016[/COLOR]
     - added back Play Folder to quick launch menu
     - added LaunchSFMenu script
-          usage: xbmc.runscript(special://home/addons/plugin.program.super.favourites/LaunchSFMenu.py)
+          usage: xbmc.runscript(special://home/addons/plugin.program.cabel.favourites/LaunchSFMenu.py)
           use to launch the Super Favourites global menu from skins, other addons, custom buttons, etc
     - add to Super Favourites option can be configured to remember previous folder
     - fixed locking of Super Folders
