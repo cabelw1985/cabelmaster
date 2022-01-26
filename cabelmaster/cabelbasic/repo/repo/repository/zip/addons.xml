@@ -1042,7 +1042,7 @@ updates to image reduction algorithm to better deal with shows with lots of seas
     </extension>
 </addon>
 
-<addon id="plugin.program.skincabelbasic" name="[COLOR darkcyan]Cabelbasic [/COLOR]All In One Wizard" version="1.0.1" provider-name="Cabel Basic Kodi Wizard">
+<addon id="plugin.program.skincabelbasic" name="[COLOR darkcyan]SkinCabelbasic [/COLOR]All In One Wizard" version="1.0.1" provider-name="Cabel Basic Kodi Wizard">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
